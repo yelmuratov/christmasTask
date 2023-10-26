@@ -1,0 +1,29 @@
+.Snowflake {
+	display: inline-block;
+	color: #FFFAFA;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+	0% {
+		opacity: 0;
+	}
+	3% {
+		opacity: .4;
+	}
+
+	50%{
+		opacity: .9;
+	}
+
+	90% {
+		opacity: .2;
+	}
+	100% {
+		transform: translate(0, 90vh);
+		opacity: 0;
+	}
+}
